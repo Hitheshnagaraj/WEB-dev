@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Events</title>
+</head>
+<body>
+    <h1>Javascript Events</h1>
+    <h2>Enter something here</h2>
+    <input type="text" id="input1" onfocus="focusevent()"/><br>
+    <input type="text" id="input2" onfocus="focusevent()"/><br>
+    <input type="text" id="input3" onfocus="focusevent()"/><br>
+
+    <script>
+        function focusevent() {
+            document.getElementById("input1").style.backgroundColor = "aqua";
+            document.getElementById("input2").style.backgroundColor = "red";
+            document.getElementById("input3").style.backgroundColor = "green";
+        }
+        
+    </script>
+</body>
+</html>

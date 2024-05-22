@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions</title>
+</head>
+<body>
+    <!-- <p onmouseover="myFunction('wordl')">hover over me</p> -->
+
+    <input id="redBox" type="text" onfocus="changeBoxColor('red')" onblur="removeColor('red')"><br>
+
+    <input id="greenBox" type="text" onfocus="changeBoxColor('green')" onblur="removeColor('green')"><br>
+    <input id="blueBox" type="text" onfocus="changeBoxColor('blue')" onblur="removeColor('blue')"><br>
+    
+    <script>
+        function myFunction(val) {
+            alert("Hello " + val);
+        }
+        function changeBoxColor(color) {
+            document.getElementById(color + 'Box').style.backgroundColor = color;
+        }
+        function removeColor(color) {
+            document.getElementById(color + 'Box').style.backgroundColor = '';
+        }
+    </script>
+</body>
+</html>
