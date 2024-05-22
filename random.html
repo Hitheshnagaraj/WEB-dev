@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Generator</title>
+</head>
+<body>
+    <input type="text" id="numb">
+    <button onclick="random()">Check</button>
+
+    <script>
+        
+        function random(){
+            const r=(Math.random() * 10);
+            const a = Math.floor(r);
+            
+            const n1 = parseInt(document.getElementById('numb').value);
+            if(n1 === a){
+                alert("Yes you are correct");
+            }
+            else{
+                alert("No you are wrong " + a +" this is answer");
+            }
+            // alert(r);
+        }
+    </script>
+</body>
+</html>
